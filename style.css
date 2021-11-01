@@ -1,8 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-image: url("./images/theatre-g8ea46f277_1920.jpg");
+    background-position:center ;
+    background-attachment: fixed;
+    color:  wheat;
+}
+
+
+
 .cardClass{
+    border: 1px solid wheat;
+    border-radius: 8%;
     flex-direction: column;
     width: 18%;
     margin:2%;
-    padding: 2%;
+    margin-top:2%;
+    padding: 0.5%;
+    height: auto;
+
+
 } 
 
 
@@ -11,10 +28,13 @@
     justify-content: space-around;
     flex-wrap: wrap;
     width: 100%;
+
 }
 
 
 #imgOfInfo{
-    width: 300px;
-    height:  250px;
+    width: 100%;
+    height: 50%;
+    border-radius: 10%;
+
 }
