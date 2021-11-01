@@ -1,0 +1,20 @@
+.cardClass{
+    flex-direction: column;
+    width: 18%;
+    margin:2%;
+    padding: 2%;
+} 
+
+
+#DivOfShowInfo{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+
+#imgOfInfo{
+    width: 300px;
+    height:  250px;
+}
