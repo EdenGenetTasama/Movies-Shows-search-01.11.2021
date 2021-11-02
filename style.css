@@ -8,7 +8,6 @@
 }
 
 
-
 .cardClass{
     border: 1px solid wheat;
     border-radius: 8%;
@@ -36,5 +35,38 @@
     width: 100%;
     height: 50%;
     border-radius: 10%;
+
+}
+
+#imgOfInfoTwo{
+    width: 100%;
+    height: 80%;
+    border-radius: 10%;
+
+}
+
+.nameTitle{
+ font-weight: bold;
+ font-size: 35px;
+}
+
+
+#selectId , #inputId{
+    width: 15%;
+ background-color: black;
+ font-size: 30px;
+}
+
+
+#divOfSearchEle{
+    display: flex;
+justify-content: center;
+}
+
+
+#btnIDById , #btnIDByName{
+align-items: center;
+    width: 15%;
+    font-size: 23px;
 
 }

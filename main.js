@@ -47,7 +47,7 @@ function runAllArrayOfObject(arrayOfObject) {
     // console.log(item);
     DivOfShowInfo.innerHTML += `<article class="cardClass">
         <a href="${item.show.url}"><img src="${item.show.image.original}" id="imgOfInfo"></a>
-        <h2>${item.show.name}</h2>
+        <h1 class="nameTitle">${item.show.name}</h1>
         <p>${item.show.summary}</p>
         
 
@@ -57,10 +57,10 @@ function runAllArrayOfObject(arrayOfObject) {
 }
 
 function runAllArrayOfObjectPerson(object) {
-  // console.log(object);
+  console.log(object);
   DivOfShowInfo.innerHTML = `<article class="cardClass">
-    <a href="${object.url}"><img src="${object.image.original}" id="imgOfInfo"></a>
-          <h2>${object.name}</h2>
+    <a href="${object.url}"><img src="${object.image.original}" id="imgOfInfoTwo"></a>
+    <br> <h1 class="nameTitle">${object.name}</h1>
           </p>
           </article>
           `;
@@ -68,10 +68,10 @@ function runAllArrayOfObjectPerson(object) {
 
 function runPerActorName(array) {
   for (const iterator of array) {
-    // console.log(iterator.person);
+    console.log(iterator.person);
     DivOfShowInfo.innerHTML += `<article class="cardClass">
-   <a href="${iterator.person.url}"><img src="${iterator.person.image.original}" id="imgOfInfo"></a>
-          <h2>${iterator.person.name}</h2>
+   <a href="${iterator.person.url}"><img src="${iterator.person.image.original}" id="imgOfInfoTwo"></a>
+   <h1 class="nameTitle">${iterator.person.name}</h1>
           </p>
    </article>
    `;
@@ -101,6 +101,8 @@ btnIDById.onclick = () => {
 
 btnIDByName.onclick = () => {
   sortByName(inputId.value).then((res) => {
-    runPerActorName(res);
+    runPerActorName(res)
+  }).catch(()=>{}).finally(()=>{
+    stopGifLoading()
   });
 };
