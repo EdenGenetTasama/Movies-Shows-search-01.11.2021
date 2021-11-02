@@ -55,6 +55,7 @@
     width: 15%;
  background-color: black;
  font-size: 30px;
+ border: 2px solid wheat;
 }
 
 
@@ -68,5 +69,12 @@ justify-content: center;
 align-items: center;
     width: 15%;
     font-size: 23px;
+    border: 2px solid wheat;
 
+}
+
+#mainHeader{
+    font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size:70px;
 }
